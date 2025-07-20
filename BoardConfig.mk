@@ -52,7 +52,7 @@ BOARD_KERNEL_OFFSET := 0x00080000
 BOARD_RAMDISK_OFFSET := 0x14f88000
 BOARD_DTB_OFFSET := 0x07880000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_BOOTIMG_HEADER_VERSION := 2
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -60,8 +60,8 @@ TARGET_PREBUILT_DTB := device/motorola/lima/prebuilt/dtb.img
 TARGET_PREBUILT_KERNEL := device/motorola/lima/prebuilt/Image.gz
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_PREBUILT_DTBOIMAGE := device/motorola/lima/prebuilt/dtbo.img
-BOARD_PREBUILT_DTBIMAGE := device/motorola/lima/prebuilt/dtb.img
+BOARD_PREBUILT_DTBOIMAGE_DIR := device/motorola/lima/prebuilt
+BOARD_PREBUILT_DTBIMAGE_DIR := device/motorola/lima/prebuilt
 
 # Kernel - Mkbootimg
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
