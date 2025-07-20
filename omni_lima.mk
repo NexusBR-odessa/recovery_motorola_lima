@@ -21,13 +21,13 @@ PRODUCT_RELEASE_NAME := Motorola One Macro
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lima
 PRODUCT_NAME := omni_lima
 PRODUCT_BRAND := Motorola
-PRODUCT_MODEL := One Macro
+PRODUCT_MODEL := moto g(8) play
 PRODUCT_MANUFACTURER := Motorola
 
 # HACK: Set vendor patch level
