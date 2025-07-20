@@ -15,9 +15,5 @@
 # limitations under the License.
 #
 
-lunch omni_lima-eng
-
-export ALLOW_MISSING_DEPENDENCIES=true
-export LC_ALL=C
-
-mka recoveryimage -j$(nproc --all)
+add_lunch_combo omni_lima-userdebug
+add_lunch_combo omni_lima-eng
